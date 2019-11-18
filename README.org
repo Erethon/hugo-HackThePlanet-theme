@@ -1,0 +1,7 @@
+* Hack The Planet Hugo Theme
+A simple Hugo theme to scratch my own itch of having a barebones
+frontend for my [[https://blog.erethon.com][blog]]. While it's useable, it's missing a lot of
+features (pagination, tooltips, thumbnails, proper configuration, etc)
+to be considered "production-ready".
+
+Heavily inspired from [[https://drewdevault.com/][Drew DeVault's]] [[https://git.sr.ht/~sircmpwn/drewdevault.com][blog and theme]].
