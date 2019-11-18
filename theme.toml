@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "HackThePlanet"
+license = "MIT"
+licenselink = "https://github.com/erethon/hugo-HackThePlanet-theme/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/erethon/hugo-HackThePlanet-theme/"
+tags = ["tags", "categories"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Dionysis Grigoropoulos"
+  homepage = "https://erethon.com/"

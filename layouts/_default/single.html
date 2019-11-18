@@ -1,0 +1,6 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+  {{ .Date.Format "Jan 2, 2006" }}
+  <p>{{ .Content }}</p>
+  {{ if .Params.tags }} Tags: {{ range .Params.tags }} <a href="/tags/{{ . }}"> {{ . }}</a> {{ end }} {{ end }}
+{{ end }}

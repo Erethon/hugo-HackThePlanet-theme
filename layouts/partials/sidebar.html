@@ -1,0 +1,20 @@
+<p>{{ $.Site.Params.author }}</p>
+<p>{{ $.Site.Params.description }}</p>
+
+<p><hr /></p>
+
+{{ range $index, $element := .Site.Menus.main }}
+  <p><a href="{{ $element.URL | absURL }}" title="{{ $element.Name }}">{{ $element.Name }}</a></p>
+{{ end }}
+
+<p><hr /></p>
+
+Recent posts:
+
+{{ range first 5 .Site.Pages }}
+  <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
+{{ end }}
+
+<p><hr /></p>
+
+{{ $.Site.Params.footer | safeHTML}}

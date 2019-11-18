@@ -1,0 +1,8 @@
+{{ define "main" }}
+        {{ range first 30 .Data.Pages }}
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        {{ .Summary }}
+        <p><p><a href url="{{ .Permalink }}">Read more</a>
+        {{ end }}
+        <p>
+{{ end }}
