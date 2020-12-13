@@ -102,3 +102,7 @@ img {
 hr.footer {
   margin-bottom: 0.5em;
 }
+
+figure {
+  margin-bottom: 1em;
+}
