@@ -1,5 +1,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/css/hacktheplanet.css"/>
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 
 <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
 <meta name="author" content="{{ .Site.Params.author }}">
