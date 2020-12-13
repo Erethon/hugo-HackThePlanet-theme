@@ -78,6 +78,9 @@ pre.src {
 
 pre {
   box-shadow: none;
+  margin-bottom: 1em;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 h1 {
@@ -93,7 +96,7 @@ h2 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 hr.footer {
