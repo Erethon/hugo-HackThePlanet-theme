@@ -11,7 +11,7 @@
 
 Recent posts:
 
-{{ range first 5 .Site.Pages }}
+{{ range first 5 .Site.RegularPages }}
   <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
 {{ end }}
 
