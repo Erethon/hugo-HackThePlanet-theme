@@ -7,7 +7,9 @@
 <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ end }}">
-
+{{ if .Site.Params.disablereferrer }}
+<meta name="referrer" content="no-referrer" />
+{{ end -}}
 
 <title>{{ .Title }}</title>
 </head>

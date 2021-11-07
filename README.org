@@ -5,3 +5,7 @@ features (pagination, tooltips, thumbnails, proper configuration, etc)
 to be considered "production-ready".
 
 Heavily inspired from [[https://drewdevault.com/][Drew DeVault's]] [[https://git.sr.ht/~sircmpwn/drewdevault.com][blog and theme]].
+
+** Configuration
+- Setting `disablereferrer` to `true` adds a `meta` tag to instruct the browser
+  to not include the referer header in requests.
