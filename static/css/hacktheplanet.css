@@ -60,6 +60,8 @@ li::before {
   counter-increment: listcount;
   content: "0" counter(listcount) ": ";
   color: #d7dc4b;
+  margin-right: 8px;
+  float: left;
 }
 
 code {
