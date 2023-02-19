@@ -9,3 +9,5 @@ Heavily inspired from [[https://drewdevault.com/][Drew DeVault's]] [[https://git
 ** Configuration
 - Setting `disablereferrer` to `true` adds a `meta` tag to instruct the browser
   to not include the referer header in requests.
+- Setting `language` to a string sets the language in <html lang=""> for every
+  page. Default value is `en`.
