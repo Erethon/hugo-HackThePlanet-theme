@@ -9,6 +9,7 @@
 <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ end }}">
 {{ if .Site.Params.disablereferrer }}
 <meta name="referrer" content="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ end -}}
 
 <title>{{ .Title }}</title>
