@@ -1,0 +1,8 @@
+{{- $video_src := .Get "src" -}}
+
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    <video width="640" height="480" controls>
+        <source src="{{ $video_src }}" type="video/webm">
+            Your browser does not support the video tag.
+    </video>
+</figure>

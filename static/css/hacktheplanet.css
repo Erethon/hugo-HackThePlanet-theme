@@ -70,6 +70,15 @@ code {
   color: #ce664a;
 }
 
+.highlight {
+  background-color: #0f0622;
+}
+
+code.language-text {
+  font-family: monospace;
+  color: #52cbdf;
+}
+
 p {
   margin-bottom: 1em;
 }
