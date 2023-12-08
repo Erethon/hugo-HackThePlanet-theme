@@ -122,3 +122,8 @@ figure {
 
 .content {
   font-size: 1.125em;
+}
+
+p.entry {
+  margin-top: 1em;
+}
