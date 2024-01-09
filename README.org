@@ -12,3 +12,7 @@ Heavily inspired from [[https://drewdevault.com/][Drew DeVault's]] [[https://git
 - Setting `language` to a string sets the language in <html lang=""> for every
   page. Default value is `en`.
 - `avataralt` sets the alt text for the avatar image on the sidebar.
+- Setting `enableComments` to `true` adds an `<a href> at the end of every post
+  which contains a `comments` param. The `comments` parameter must be a link.
+  The description of the hyperlink by default is "Fediverse", but can be changed
+  by setting the `comments_description` parameter.

@@ -3,4 +3,8 @@
   {{ .Date.Format "Jan 2, 2006" }}
   <p>{{ .Content }}</p>
   {{ if .Params.tags }} Tags: {{ range .Params.tags }} <a href="/tags/{{ . }}"> {{ . }}</a> {{ end }} {{ end }}
+  {{ if and (.Site.Params.enableComments) (.Params.comments) }} 
+  <p><hr>
+  Comments on <a href="{{.Params.comments}}" target="_blank">{{.Params.comments_description | default "Fediverse"}}</a>.
+  {{ end }}
 {{ end }}
