@@ -10,8 +10,8 @@ body {
   background: #141414;
   color: #e8e8e8;
   counter-reset: listcount;
-  line-height: 1.25;
-  font-size: 12pt;
+  line-height: 1.35;
+  font-size: 14.5pt;
 }
 
 .avatar {
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -83,6 +83,10 @@ p {
   margin-bottom: 1em;
 }
 
+.sidebar p {
+  margin-bottom: 0.75em;
+}
+
 pre.src {
   overflow-x: auto;
   overflow-y: visible;
@@ -126,4 +130,15 @@ figure {
 
 p.entry {
   margin-top: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .container .sidebar {
+    display: none;
+  }
+
+ .container {
+     grid-template-columns: none;
+     font-size: 13pt;
+ }
 }
