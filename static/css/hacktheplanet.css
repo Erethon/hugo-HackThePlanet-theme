@@ -116,8 +116,9 @@ img {
   max-width: 100%;
 }
 
-hr.footer {
+hr {
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 figure {
