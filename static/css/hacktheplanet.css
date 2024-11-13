@@ -70,6 +70,15 @@ code {
   color: #ce664a;
 }
 
+blockquote {
+  font-family: monospace;
+  border-left: 4px solid #ce664a;
+  padding-left: 15px;
+  font-style: italic;
+  color: #aaa;
+  margin: 1em 0;
+}
+
 .highlight {
   background-color: #0f0622;
 }
