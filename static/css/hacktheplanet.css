@@ -110,13 +110,23 @@ pre {
 
 h1 {
   text-decoration: underline dotted;
-  font-size: 16pt;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
 h2 {
-  font-size: 14pt;
+  text-decoration: underline dotted;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1em;
+  text-decoration: underline dotted;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 0.9em;
   text-decoration: underline dotted;
   margin-bottom: 10px;
 }
