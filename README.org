@@ -7,12 +7,20 @@ to be considered "production-ready".
 Heavily inspired from [[https://drewdevault.com/][Drew DeVault's]] [[https://git.sr.ht/~sircmpwn/drewdevault.com][blog and theme]].
 
 ** Configuration
-- Setting `disablereferrer` to `true` adds a `meta` tag to instruct the browser
+- Setting =disablereferrer= to =true= adds a =meta= tag to instruct the browser
   to not include the referer header in requests.
-- Setting `language` to a string sets the language in <html lang=""> for every
-  page. Default value is `en`.
-- `avataralt` sets the alt text for the avatar image on the sidebar.
-- Setting `enableComments` to `true` adds an `<a href> at the end of every post
-  which contains a `comments` param. The `comments` parameter must be a link.
+- Setting =language= to a string sets the language in <html lang=""> for every
+  page. Default value is =en=.
+- =avataralt= sets the alt text for the avatar image on the sidebar.
+- Setting =enableComments= to =true= adds an =<a href>= at the end of every post
+  which contains a =comments= param. The =comments= parameter must be a link.
   The description of the hyperlink by default is "Fediverse", but can be changed
-  by setting the `comments_description` parameter.
+  by setting the =comments_description= parameter.
+- Setting =source= will add a link at the bottom of each post that points to
+  the latest commit that edited said post. =Source= expects a dictionary with
+  two pairs, one called =url= and the other =descritpion=. =url= should be set to
+  the url of the code forge meant of individual commits, for example
+  "https://github.com/username/repo/commit/". =description= is the text that will
+  be used to construct the link description.
+  Note: =enableGitInfo= must be enabled in the main site settings of Hugo for
+  this to work.

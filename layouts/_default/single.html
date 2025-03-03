@@ -3,6 +3,9 @@
   {{ .Date.Format "Jan 2, 2006" }}
   <p>{{ .Content }}</p>
   {{ if .Params.tags }} Tags: {{ range .Params.tags }} <a href="/tags/{{ . }}"> {{ . }}</a> {{ end }} {{ end }}
+  {{ if and (.Site.Params.source) (.GitInfo.Hash) }}
+  <p>Source: <a href="{{.Site.Params.source.url }}{{ .GitInfo.Hash }}">{{ .Site.Params.source.description }}</a>
+  {{ end }}
   {{ if and (.Site.Params.enableComments) (.Params.comments) }} 
   <p><hr>
   Comments on <a href="{{.Params.comments}}" target="_blank">{{.Params.comments_description | default "Fediverse"}}</a>.
