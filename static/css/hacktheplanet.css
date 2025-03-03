@@ -114,9 +114,14 @@ h1 {
   margin-top: 10px;
 }
 
+h1.post-title {
+  font-size: 16pt;
+}
+
 h2 {
   text-decoration: underline dotted;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -129,6 +134,10 @@ h4 {
   font-size: 0.9em;
   text-decoration: underline dotted;
   margin-bottom: 10px;
+}
+
+h5 {
+  text-decoration: underline dotted;
 }
 
 img {
@@ -161,4 +170,14 @@ p.entry {
      grid-template-columns: none;
      font-size: 13pt;
  }
+}
+
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: circle;
+}
+
+nav li::before {
+  content: none;
 }
